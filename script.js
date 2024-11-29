@@ -6,30 +6,30 @@ let arr = [
 
   function PrintDeveloperbyMap() {
     arr.map((item,index)=>{
-        if(item.profession ==='developer'){
-            console.log(item)
-        }
-    })
-  }
+        if(item.profession =='developer'){
+            console.log(item);
+        };
+    });
+  };
 
   function PrintDeveloperbyForEach() {
     arr.forEach((item,index)=>{
         if(item.profession ==='developer'){
-        console.log(item)
-        }
-    })
-  }
+        console.log(item);
+        };
+    });
+  };
 
   function addData() {
     const newEmployee = { id: 4, name: "Susan", age: "20", profession: "intern" };
     arr.push(newEmployee);
     console.log(arr);
-  }
+  };
 
   function removeAdmin() {
     arr = arr.filter(item => item.profession !== "admin");
     console.log(arr);
-  }
+  };
 
   function concatenateArray() {
 const newitem = [
@@ -41,7 +41,8 @@ const newitem = [
 
   arr = arr.concat(newitem);
   console.log(arr);
-}
+};
+
 
 
   PrintDeveloperbyMap();
